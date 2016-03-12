@@ -9,3 +9,5 @@ RUN apt-get update && apt-get install -y \
   curl -OL ${zol_link}${zol_package} && dpkg -i ${zol_package} && \
   apt-get -y update && apt-get -y install debian-zfs && \
   rm -rf /var/lib/apt/lists/* && rm ${zol_package}
+
+ENTRYPOINT []
